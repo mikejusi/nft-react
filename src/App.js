@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/community/*" element={<Community />} />
+            <Route path="/community" element={<Community />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
       </BrowserRouter>

@@ -9,6 +9,20 @@ const crd = [
 function Main() {
     return (
         <main>
+            <div className="home__banner">
+                <div className="banner__wrap">
+                    <h1 className='title'>Авторские NFT со всего мира</h1>
+                    <h3 className="title__desc">Получите ранний доступ к Метавселенной!</h3>
+                    <div className="banner__btns">
+                        <Link className="banner__btn" to="/home">
+                            Подробнее
+                        </Link>
+                        <Link className="banner__btn" to="/home">
+                            <span>Telegram</span>
+                        </Link>
+                    </div>
+                </div>
+            </div>
             <div className="main__wrap">
                 <div className="popular__collection">
                     <div className="title__wrap">
