@@ -78,9 +78,8 @@ a{
 }
 
 .logo{
-	height: 76px;
-	width: 76px;
-	background-color: rebeccapurple;
+	margin: 0 6px;
+	align-self: center;
 }
 
 .nav__links{
@@ -227,9 +226,21 @@ a{
 .popular__cards{
 	display: flex;
 	flex-wrap: wrap;
+	grid-column-gap: 32px;
+}
+
+.card-col{
+	/* flex: 0 0 auto;
+    width: 33.33333333%; */
 }
 
 .popular__card{
+	/* flex: 1 0 1%;
+    width: 100%;
+    max-width: 100%; */
+
+
+
 	width: 330px;
     height: 341px;
     background: #1a1825;

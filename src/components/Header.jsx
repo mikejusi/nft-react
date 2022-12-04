@@ -4,9 +4,9 @@ function Header() {
     return (
             <header className="header">
                 <div className="nav__wrapper">
-                    <div className="logo">
-
-                    </div>
+                    <Link to="/home" className="logo">
+                        <img src="img/43.png" alt="" />
+                    </Link>
 
                     <div className="nav__links">
                         <Link className="link" to="/home">
