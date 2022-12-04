@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Header from "./components/Header";
 import Dialog from './components/dialog-window';
+import Footer from './components/Footer';
 
 import Home from "./pages/home";
 import NoMatch from './pages/404';
@@ -19,6 +20,7 @@ function App() {
             <Route path="*" element={<NoMatch />} />
         </Routes>
         <Dialog />
+        <Footer />
       </BrowserRouter>
     </div>
   );

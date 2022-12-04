@@ -5,7 +5,7 @@ function Header() {
             <header className="header">
                 <div className="nav__wrapper">
                     <Link to="/home" className="logo">
-                        <img src="img/43.png" alt="" />
+                        <img src="img/logo__small.png" alt="logo" />
                     </Link>
 
                     <div className="nav__links">
