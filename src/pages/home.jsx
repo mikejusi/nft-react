@@ -1,9 +1,12 @@
-import Card from '../components/Card-popular';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Card from '../components/Card-popular';
+
 const crd = [
-    { id: '', title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: '12 999', pict: 'img/sneaker_1.jpg' },
-    { id: '', title: 'Мужские Кроссовки Nike Air Max 270', price: '12 999', pict: 'img/sneaker_2.jpg' }
+    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/1.jpeg' },
+    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/2.png' },
+    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/3.png' }
 ]
 
 function Main() {
@@ -27,16 +30,15 @@ function Main() {
                 <div className="popular__collection">
                     <div className="title__wrap">
                         <h3 className="title">Популярные коллекции</h3>
-                        <a className="title__link" href="#">Больше</a>
+                        <Link className="title__link" to="/home">Больше <span class="fa-solid fa-angle-right"></span></Link>
                     </div>
                     <div className="popular__cards">
-
                         {crd.map((obj) => (
 
                             <Card 
                                 title={obj.title}
-                                price={obj.price}
-                                pict={obj.pict}
+                                desc={obj.desc}
+                                pic={obj.pic}
                             />
 
                         ))}
