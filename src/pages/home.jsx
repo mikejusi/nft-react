@@ -10,6 +10,16 @@ const crd = [
 ]
 
 function Main() {
+    const [Slide, setSlide] = React.useState(false);
+
+    const handleClickSlideS = () => {
+      setSlide(true);
+    };
+
+    const handleClickSlideF = () => {
+        setSlide(false);
+    };
+
     return (
         <main>
             <div className="home__banner">
@@ -43,6 +53,43 @@ function Main() {
 
                         ))}
 
+                    </div>
+                </div>
+
+                <div className="popular__collection">
+                    <div className="title__wrap">
+                        <h3 className="title">Q&A</h3>
+                        <Link className="title__link" to="/home">Поддержка <span class="fa-solid fa-angle-right"></span></Link>
+                    </div>
+                    <div className="qa__slider">
+                        <div className="qa__container">
+                            <div className={Slide ? "qa__items qa__item__active2" : "qa__items qa__item__active"} >
+                                <div className="qa__item">
+                                    <h3 className='qa__title'>Что такое невзаимозаменяемый токен (NFT)?</h3>
+                                    <p className="qa__desc">Невзаимозаменяемый токен (NFT) — это токен на базе блокчейна, который предоставляет право собственности на конкретный актив, например, изображение или видео, и содержит информацию о его происхождении.</p>
+                                </div>
+                                <div className="qa__item">
+                                    <h3 className='qa__title'>Что такое NFT маркетплейс?</h3>
+                                    <p className="qa__desc">NFT маркетплейс — это универсальная платформа для размещения, покупки и продажи NFT. NFT используются для предметов цифрового искусства и коллекционирования, GameFi-проектов, метавселенных и многого другого.</p>
+                                </div>
+                            </div>
+                            <div className={Slide ? "qa__items qa__item__active" : "qa__items qa__item__dissable"} >
+                                <div className="qa__item">
+                                    <h3 className='qa__title'>Как купить NFT? (NFT)?</h3>
+                                    <p className="qa__desc">Для доступа к NFT маркетплейсу вы можете использовать ваш существующий спотовый аккаунт Jusi и криптовалюты ETH, BIT, XTZ или USDT. Если вы ещё не зарегистрированы на Jusi, то вам понадобится создать аккаунт. Обращаем внимание, что для покупки или продажи отдельного NFT на Jusi может использоваться только один токен. Например, если цена какого-либо NFT указана в BIT (BitDAO), то такой NFT нельзя купить или продать за USD или ETH.</p>
+                                </div>
+                                <div className="qa__item">
+                                    <h3 className='qa__title'>Как продать NFT?</h3>
+                                    <p className="qa__desc">Как продать NFT? Перейдите в свой профиль, выберите NFT, который хотите продать, и нажмите «Разместить». Откроется страница размещения NFT на бирже. Для размещения своего NFT выполните следующие шаги: 1. Выберите монету, за которую вы хотите продать ваш NFT (USDT, BIT, XTZ или ETH). 2. Укажите количество (цену). 3. Выберите время снятия с продажи. 4. Нажмите «Подтвердить». Обращаем внимание, что в настоящее время допускается размещать только NFT-токены, приобретаемые на NFT-маркетплейсе Bybit. Если вы хотите разместить собственные NFT, напишите нам на nft-service@bybit.com.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={Slide ? "qa__controller cnt__up qa__item__active" : "qa__controller cnt__up controller__disable"} onClick={handleClickSlideF}>
+                            <i class="fa-solid fa-angle-up"></i>
+                        </div>
+                        <div className={Slide ? "qa__controller cnt__down controller__disable" : "qa__controller cnt__down qa__item__active"} onClick={handleClickSlideS}>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
                     </div>
                 </div>
             </div>
