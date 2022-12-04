@@ -19,11 +19,11 @@ function Header() {
                             Сообщество
                         </Link>
                     </div>
-                    <div className="auth__link">
+                    <div className="auth__links">
                         <Link className="link" to="/community">
                             Вход
                         </Link>
-                        <Link className="link" to="/community">
+                        <Link className="link reg__link" to="/community">
                             Регистрация
                         </Link>
                         <Link className="link" to="/community">

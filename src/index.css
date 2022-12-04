@@ -65,7 +65,7 @@ a{
 /* header style */
 
 .header{
-  background-color: #262a3a;
+  background-color: #14151e;
   width: 100%;
   height: 76px;
   position: sticky;
@@ -77,18 +77,46 @@ a{
 	display: flex;
 }
 
+.logo{
+	height: 76px;
+	width: 76px;
+	background-color: rebeccapurple;
+}
+
 .nav__links{
 	display: flex;
+	align-items: center;
 	margin-right: auto;
 }
 
 .link{
+	font-weight: 600;
 	padding: 0 16px;
 	color: #9a9ba0;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 76px;
+	transition: all .3s linear;
 }
 
-.auth__link{
+.link:hover{
+	color: #f7a600;
+    background: hsla(0,0%,100%,.06);
+}
+
+.auth__links{
 	display: flex;
+	align-items: center;
+}
+
+.auth__links .link{
+    color: #fff;
+}
+
+.auth__links .reg__link{
+	background-color: #f7a600;
+	color: #15192a;
 }
 
 /* header style */
@@ -213,4 +241,15 @@ a{
 .popular__card:hover{
 	border-width: 3px;
     transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1200px) {
+	.banner__btns{
+		place-content: center;
+	}
+
+	.banner__wrap{
+		text-align-last: center;
+		padding-top: 300px;
+	}
 }

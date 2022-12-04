@@ -17,9 +17,9 @@ function Main() {
                         <Link className="banner__btn" to="/home">
                             Подробнее
                         </Link>
-                        <Link className="banner__btn" to="/home">
+                        <a className="banner__btn" href="https://t.me/Jusii">
                             <span>Telegram</span>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
