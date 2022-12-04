@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Header from "./components/Header";
+import Dialog from './components/dialog-window';
+
 import Home from "./pages/home";
 import NoMatch from './pages/404';
 import Community from './pages/community';
@@ -16,6 +18,7 @@ function App() {
             <Route path="/community" element={<Community />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
+        <Dialog />
       </BrowserRouter>
     </div>
   );

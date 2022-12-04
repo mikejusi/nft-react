@@ -378,3 +378,27 @@ a{
 		padding-top: 300px;
 	}
 }
+
+/* dialog */
+
+.dialog-window{
+	background-color: rgb(247, 166, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+	box-shadow: 0 4px 4px rgb(247 166 0 / 10%), 0 0px 30px rgb(247 166 0 / 45%);
+	transition: .3s all;
+}
+
+.dialog-window:hover{
+	opacity: .8;
+}
+
+.dialog-window span{
+	font-size: 1.5rem;
+    padding: 14px;
+}
