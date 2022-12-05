@@ -224,8 +224,11 @@ a{
 	transform: translateX(2px);
 }
 
+.popular__collection{
+    margin-bottom: 60px;
+}
+
 .popular__cards{
-	margin-bottom: 60px;
 	display: flex;
 	flex-wrap: wrap;
 	grid-column-gap: 32px;
@@ -688,4 +691,41 @@ footer{
 
 .controller__disable i{
 	color: #555460!important;
+}
+
+/* about */
+
+.about__wrap{
+    display: flex;
+    flex-flow: row nowrap;
+	min-height: 403px;
+    background: linear-gradient(90.48deg,rgba(146,144,255,.1) 1.04%,rgba(146,144,255,.05) 77.53%,rgba(146,144,255,.02) 109.92%);
+    border-radius: 24px;
+    padding: 32px 40px;
+	overflow: hidden;
+}
+
+.about__item{
+    text-align: center;
+    min-height: 340px;
+}
+
+.about__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: hsla(0,0%,100%,.9);
+    text-shadow: 0 2px 4px rgb(207 199 255 / 20%);
+    padding: 0 20px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.about__desc{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: hsla(0,0%,100%,.6);
+    text-shadow: 0 2px 4px rgb(207 199 255 / 20%);
+    padding: 0 20px;
 }

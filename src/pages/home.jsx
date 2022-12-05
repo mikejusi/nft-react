@@ -58,6 +58,29 @@ function Main() {
 
                 <div className="popular__collection">
                     <div className="title__wrap">
+                        <h3 className="title">О нас</h3>
+                    </div>
+                    <ul className="about__wrap">
+                        <li className="about__item">
+                            <img src="./img/about/1.png" alt="not found" width="320px" height="220px" />
+                            <h3 className='about__title'>Ранний доступ</h3>
+                            <p className='about__desc'>Коллекционируйте новейшие авторские NFT со всего мира</p>
+                        </li>
+                        <li className="about__item">
+                            <img src="./img/about/2.png" alt="not found" width="320px" height="220px" />
+                            <h3 className='about__title'>Нулевая комиссия за транзакцию</h3>
+                            <p className='about__desc'>Покупайте любимые NFT без дополнительных расходов</p>
+                        </li>
+                        <li className="about__item">
+                            <img src="./img/about/3.png" alt="not found" width="320px" height="220px" />
+                            <h3 className='about__title'>Авторы из разных стран мира</h3>
+                            <p className='about__desc'>Получите доступ к авторским NFT со всего мира.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="popular__collection">
+                    <div className="title__wrap">
                         <h3 className="title">Q&A</h3>
                         <Link className="title__link" to="/home">Поддержка <span class="fa-solid fa-angle-right"></span></Link>
                     </div>
@@ -76,11 +99,11 @@ function Main() {
                             <div className={Slide ? "qa__items qa__item__active" : "qa__items qa__item__dissable"} >
                                 <div className="qa__item">
                                     <h3 className='qa__title'>Как купить NFT? (NFT)?</h3>
-                                    <p className="qa__desc">Для доступа к NFT маркетплейсу вы можете использовать ваш существующий спотовый аккаунт Jusi и криптовалюты ETH, BIT, XTZ или USDT. Если вы ещё не зарегистрированы на Jusi, то вам понадобится создать аккаунт. Обращаем внимание, что для покупки или продажи отдельного NFT на Jusi может использоваться только один токен. Например, если цена какого-либо NFT указана в BIT (BitDAO), то такой NFT нельзя купить или продать за USD или ETH.</p>
+                                    <p className="qa__desc">Для доступа к NFT маркетплейсу вы можете использовать ваш существующий спотовый аккаунт Reverso и криптовалюты ETH, BIT, XTZ или USDT. Если вы ещё не зарегистрированы на Reverso, то вам понадобится создать аккаунт. Обращаем внимание, что для покупки или продажи отдельного NFT на Reverso может использоваться только один токен. Например, если цена какого-либо NFT указана в BIT (BitDAO), то такой NFT нельзя купить или продать за USD или ETH.</p>
                                 </div>
                                 <div className="qa__item">
                                     <h3 className='qa__title'>Как продать NFT?</h3>
-                                    <p className="qa__desc">Как продать NFT? Перейдите в свой профиль, выберите NFT, который хотите продать, и нажмите «Разместить». Откроется страница размещения NFT на бирже. Для размещения своего NFT выполните следующие шаги: 1. Выберите монету, за которую вы хотите продать ваш NFT (USDT, BIT, XTZ или ETH). 2. Укажите количество (цену). 3. Выберите время снятия с продажи. 4. Нажмите «Подтвердить». Обращаем внимание, что в настоящее время допускается размещать только NFT-токены, приобретаемые на NFT-маркетплейсе Bybit. Если вы хотите разместить собственные NFT, напишите нам на nft-service@bybit.com.</p>
+                                    <p className="qa__desc">Как продать NFT? Перейдите в свой профиль, выберите NFT, который хотите продать, и нажмите «Разместить». Откроется страница размещения NFT на бирже. Для размещения своего NFT выполните следующие шаги: 1. Выберите монету, за которую вы хотите продать ваш NFT (USDT, BIT, XTZ или ETH). 2. Укажите количество (цену). 3. Выберите время снятия с продажи. 4. Нажмите «Подтвердить». Обращаем внимание, что в настоящее время допускается размещать только NFT-токены, приобретаемые на NFT-маркетплейсе Reverso. Если вы хотите разместить собственные NFT, напишите нам на Reverso@gmail.com.</p>
                                 </div>
                             </div>
                         </div>
@@ -92,6 +115,7 @@ function Main() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </main>
     );
