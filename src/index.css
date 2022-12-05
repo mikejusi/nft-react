@@ -729,3 +729,173 @@ footer{
     text-shadow: 0 2px 4px rgb(207 199 255 / 20%);
     padding: 0 20px;
 }
+
+/* Market */
+
+.market__wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+}
+
+.card__item__wrap{
+    width: 240px;
+    height: 388px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.market__item__link:hover{
+    background: linear-gradient(139.76deg,#ffa842 49.65%,#ff8642);
+    box-shadow: 0 4px 4px rgb(247 166 0 / 10%), 0 4px 80px rgb(247 166 0 / 24%);
+    transition: border .3s ease-in-out;
+    transform: translateY(0);
+}
+
+.market__item__link:hover::before{
+    content: "";
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../public/img/cup.png) 50%/100% 100% no-repeat;
+    pointer-events: none;
+}
+
+.market__item__link:hover .card__detail{
+    transform: translateY(-53px);
+}
+
+.market__item__link{
+    border-radius: 8px;
+    position: relative;
+    display: block;
+    transition: box-shadow .3s linear,transform .3s linear,border .3s linear;
+    word-break: break-word;
+    border: 2px solid transparent;
+}
+
+.card__wrapper{
+    height: 388px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.card__box{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 441px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: transform .2s linear;
+    transform: translateY(0);
+}
+
+.market__img{
+    overflow: hidden;
+    background-color: #1d1e29;
+    flex-shrink: 0;
+    width: 100%;
+    height: 240px;
+    position: relative;
+    z-index: 10;
+}
+
+.market__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card__detail{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    padding: 16px 16px 12px;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(180deg,rgba(27,26,40,.8),#282828),#000;
+    transition: transform .2s linear;
+    transform: translateY(0);
+}
+
+.title__market{
+    height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    max-height: 38px;
+    color: hsla(0,0%,100%,.9);
+    margin-bottom: 6px;
+}
+
+.author__nft{
+    color: #f7a600;
+    line-height: 14px;
+    margin-bottom: 15px;
+    height: 18px;
+}
+
+.price__nft{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.price__left{
+    max-width: 50px;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.price__left span{
+    margin-right: 5px;
+    line-height: 14px;
+    color: hsla(0,0%,100%,.6);
+    flex-shrink: 0;
+}
+
+.price__right{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.price__ico{
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: hsla(0,0%,100%,.9);
+    text-align: right;
+    align-items: center;
+}
+
+.price__ico i{
+    margin-right: 6px;
+}
+
+.buy__btn{
+    background: linear-gradient(97.75deg,#ffe073 .17%,#ffcc47 14.86%,#f78500 97.52%);
+    color: #000;
+    font-weight: 700;
+    border-radius: 4px;
+    height: 38px;
+    font-size: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__item__wrap:hover .buy__btn{
+    box-shadow: 0 0 4px rgb(247 166 0 / 40%), 0 0 32px rgb(247 166 0 / 40%), inset 1px 0.5px 2px hsl(0deg 0% 100% / 49%);
+}

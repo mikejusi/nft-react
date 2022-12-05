@@ -2,11 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Card from '../components/Card-popular';
+import Market from '../components/Market';
 
 const crd = [
     { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/1.jpeg' },
     { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/2.png' },
     { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/3.png' }
+]
+
+const market = [
+    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/mr1.png', price: '267', us: 'jameskole' },
+    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/mr2.jpg', price: '365', us: 'brollin' },
+    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/mr3.jpg', price: '423', us: 'jameskole'}
 ]
 
 function Main() {
@@ -54,6 +61,27 @@ function Main() {
                         ))}
 
                     </div>
+                </div>
+
+
+                <div className="popular__collection">
+                    <div className="title__wrap">
+                        <h3 className="title">Маркетплейс</h3>
+                        <Link className="title__link" to="/home">Больше <span class="fa-solid fa-angle-right"></span></Link>
+                    </div>
+                    <ul className="market__wrap">
+                        {market.map((obj) => (
+
+                            <Market 
+                                title={obj.title}
+                                desc={obj.desc}
+                                pic={obj.pic}
+                                us={obj.us}
+                                price={obj.price}
+                            />
+
+                            ))}
+                    </ul>
                 </div>
 
                 <div className="popular__collection">
