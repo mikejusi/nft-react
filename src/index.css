@@ -84,10 +84,6 @@ a{
     width: 100%;
 }
 
-.Links__dissable{
-    display: none;
-}
-
 .logo{
 	margin: 0 6px;
 	align-self: center;
@@ -161,6 +157,10 @@ a{
         z-index: -1;
         background-color: #14151e;
         display: grid;
+    }
+
+    .Links__dissable{
+        display: none;
     }
 
     .nav__links{
