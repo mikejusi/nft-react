@@ -1,8 +1,8 @@
 function Community() {
     return ( 
-        <>
-            com
-        </>
+        <main>
+            <h3>dsa</h3>
+        </main>
      );
 }
 
