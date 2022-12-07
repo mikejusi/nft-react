@@ -1155,3 +1155,33 @@ footer{
         max-width: 100%;
     }
 }
+
+/* scroll bar */
+
+:root {
+	--scroll-bar-size: 16px;
+	--scroll-bar-thumb-background-color: #353858;
+	--scroll-bar-thumb-background-color-active: #40446d;
+}
+
+::-webkit-scrollbar {
+	width: var(--scroll-bar-size);
+	height: var(--scroll-bar-size);
+	background: #14151e;
+	cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-bar-thumb-background-color);
+	border-radius: var(--scroll-bar-size);
+	border-color: transparent;
+	border-style: solid;
+	border-width: calc(var(--scroll-bar-size)/3);
+	background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:active {
+	background-color: var(--scroll-bar-thumb-background-color-active);
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+	background-color: var(--scroll-bar-thumb-background-color-active);
+}

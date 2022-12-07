@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Home from "./pages/home";
 import NoMatch from './pages/404';
 import Community from './pages/community';
+import Marketplace from './pages/marketplace';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/market" element={<Marketplace />} />
             <Route path="/community" element={<Community />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>

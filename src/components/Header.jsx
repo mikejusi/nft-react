@@ -23,7 +23,7 @@ function Header() {
                             <Link className="link" to="/home">
                                 Главная
                             </Link>
-                            <Link className="link" to="/community">
+                            <Link className="link" to="/market">
                                 Маркетплейс
                             </Link>
                             <Link className="link" to="/community">
