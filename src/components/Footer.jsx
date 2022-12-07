@@ -12,7 +12,7 @@ function Footer() {
                         О нас
                     </h5>
                     <div className="link__wrap__footer">
-                        <Link className="link__footer" to="/home">
+                        <Link className="link__footer" to="/reference">
                             Справка
                         </Link>
                     </div>

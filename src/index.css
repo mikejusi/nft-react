@@ -1433,3 +1433,73 @@ footer{
         transform: translate(0, 0);
     }
 }
+
+
+/* reference */
+
+.about__page__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    color: hsla(0,0%,100%,.9);
+    padding: 32px 0 24px;
+}
+
+.about__page__wrap{
+    max-width: 1056px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+}
+
+.tab__panel__about{
+    display: flex;
+}
+
+.tabs__about {  
+    display: grid;
+    height: fit-content;
+    box-shadow: 1px 0 0 hsl(0deg 0% 100% / 6%);
+}
+
+.title__ref{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: hsla(0,0%,100%,.9);
+    margin-bottom: 24px;
+}
+
+.tab {  
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 43px 0 24px;
+    color: hsla(0,0%,100%,.7);
+    border-right: 2px solid #282b35;
+    cursor: pointer;
+    height: 51px;
+    background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.tab.active {
+    color: #f7a600;
+    background: rgba(247,166,0,.06);
+    border-right: 2px solid #f7a600;
+}
+
+.panel {
+    display: none;
+    background: hsla(0,0%,100%,.06);
+    border-radius: 8px;
+    margin-left: 32px;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: hsla(0,0%,100%,.7);
+}
+
+.panel .active {
+    display: block;
+}
