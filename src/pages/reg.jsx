@@ -10,11 +10,11 @@ function Register() {
                             Регистрация Reverso
                         </h3>
                     </div>
-                    <form action="">
+                    <form method='POST' autoComplete='off' action="#">
                         <div className="form__inputs">
-                            <input placeholder="Email" />
-                            <input placeholder="Пароль" />
-                            <input placeholder="Повторите пароль" />
+                            <input name='email' type="email" placeholder="Email" required />
+                            <input name='password' type="password" placeholder="Пароль" required />
+                            <input name='passwordrep' type="password" placeholder="Повторите пароль" required />
                         </div>
                         <div className="form__btn">
                             <button className='btn__cab' type="submit">Создать</button>
