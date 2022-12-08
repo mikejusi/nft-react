@@ -26,11 +26,8 @@ function Header() {
                             <Link className="link" to="/market">
                                 Маркетплейс
                             </Link>
-                            <Link className="link" to="/community">
-                                Сообщество
-                            </Link>
                             <div class="dropdown link">
-                                <label for="ckb-dropdown" class="lb-dropdown">Dropdown</label>
+                                <label for="ckb-dropdown" class="lb-dropdown">Сообщество</label>
                                 <input id="ckb-dropdown" className='dropdown-check' type="checkbox"/>
                                 <span class="fa-solid fa-caret-down arrow-dropdown" />
                                 <ul>
