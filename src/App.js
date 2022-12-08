@@ -9,6 +9,8 @@ import NoMatch from './pages/404';
 import Community from './pages/community';
 import Marketplace from './pages/marketplace';
 import Reference from './pages/reference';
+import Register from './pages/reg';
+import Auth from './pages/auth';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path="/reference" element={<Reference />} />
             <Route path="/market" element={<Marketplace />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/register" element={<Register />} />
             <Route path="*" element={<NoMatch />} />
         </Routes>
         <Dialog />
