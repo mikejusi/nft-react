@@ -29,6 +29,17 @@ function Header() {
                             <Link className="link" to="/community">
                                 Сообщество
                             </Link>
+                            <div class="dropdown link">
+                                <label for="ckb-dropdown" class="lb-dropdown">Dropdown</label>
+                                <input id="ckb-dropdown" className='dropdown-check' type="checkbox"/>
+                                <span class="fa-solid fa-caret-down arrow-dropdown" />
+                                <ul>
+                                    <li><a href="#tg">Telegram</a></li>
+                                    <li><a href="#ds">Discord</a></li>
+                                    <li><a href="#tw">Twitter</a></li>
+                                </ul>
+                            </div>
+
                         </div>
                         <div className="auth__links">
                             <Link className="link" to="/auth">
