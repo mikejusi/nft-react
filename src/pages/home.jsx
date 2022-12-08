@@ -4,28 +4,10 @@ import { Link } from 'react-router-dom';
 import Card from '../components/Card-popular';
 import Market from '../components/Market';
 
-const crd = [
-    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/1.jpeg' },
-    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/2.png' },
-    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/3.png' }
-]
+import datemarket from '../Data/card-data';
+import crd from '../Data/popular-card-data';
 
-const market = [
-    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/mr1.png', price: '267', us: 'jameskole' },
-    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/mr2.jpg', price: '365', us: 'brollin' },
-    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/mr3.jpg', price: '423', us: 'jameskole'},
-    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/mr1.png', price: '267', us: 'jameskole' },
-    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/mr2.jpg', price: '365', us: 'brollin' },
-    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/mr3.jpg', price: '423', us: 'jameskole'},
-    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/mr1.png', price: '267', us: 'jameskole' },
-    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/mr2.jpg', price: '365', us: 'brollin' },
-    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/mr3.jpg', price: '423', us: 'jameskole'},
-    { id: '', title: 'Cacnimal Party', desc: 'Theyre cactus-related animals with enjoyable life on Cacni Land.', pic: 'img/nft/mr3.jpg', price: '423', us: 'jameskole'},
-    { id: '', title: 'Dirty Rabbit Sons', desc: 'Created NFT art based on a video that has been played 13 million times worldwide', pic: 'img/nft/mr1.png', price: '267', us: 'jameskole' },
-    { id: '', title: 'MillionWinner Genesis NFT whit', desc: 'The  MillionWinner Genesis NFT whitelist utility will be sold in Grabpic on Nov 29,2022,9AM UTC', pic: 'img/nft/mr2.jpg', price: '365', us: 'brollin' }
-]
-
-const markethome = market.slice(0,8);
+const markethome = datemarket.slice(0,8);
 
 function Main() {
     const [Slide, setSlide] = React.useState(false);
