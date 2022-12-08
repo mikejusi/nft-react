@@ -31,13 +31,13 @@ function Header() {
                             </Link>
                         </div>
                         <div className="auth__links">
-                            <Link className="link" to="/community">
+                            <Link className="link" to="/auth">
                                 Вход
                             </Link>
-                            <Link className="link reg__link" to="/community">
+                            <Link className="link reg__link" to="/register">
                                 Регистрация
                             </Link>
-                            <Link className="link" to="/community">
+                            <Link className="link" to="/lang">
                                 RU
                             </Link>
                         </div>

@@ -16,24 +16,19 @@ function Footer() {
                             Справка
                         </Link>
                     </div>
-                    <div className="link__wrap__footer">
-                        <Link className="link__footer" to="/home">
-                            Условия обслуживания
-                        </Link>
-                    </div>
                 </div>
                 <div className="col__footer">
                     <h5 className="footer__title">
                         Поддержка
                     </h5>
                     <div className="link__wrap__footer">
-                        <Link className="link__footer" to="/home">
+                        <Link className="link__footer" to="/support">
                             Служба поддержки
                         </Link>
                     </div>
                     <div className="link__wrap__footer">
-                        <Link className="link__footer" to="/home">
-                            Онлайн чат
+                        <Link className="link__footer" to="/faq">
+                            FAQ
                         </Link>
                     </div>
                 </div>

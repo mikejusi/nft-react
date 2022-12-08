@@ -1,8 +1,8 @@
 function notFound() {
     return ( 
-        <>
-        Не найдено
-        </>
+        <main>
+            Не найдено
+        </main>
     );
 }
 
