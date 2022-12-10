@@ -1704,3 +1704,9 @@ footer{
     font-weight: bold;
     font-size: 26px;
 }
+
+@media screen and (max-width: 1050px) {
+    .bg__404{
+        background-size: contain;
+    }
+}
