@@ -41,7 +41,7 @@ function Footer() {
                             <a className='link__social tw' href=''><span className='fa-brands fa-twitter' /></a>
                         </div>
                         <div className="link__wrap tg__wrap">
-                            <a className='link__social tg' href=''><span className='fa-brands fa-telegram' /></a>
+                            <a className='link__social tg' href="https://t.me/Jusii"><span className='fa-brands fa-telegram' /></a>
                         </div>
                         <div className="link__wrap ds__wrap">
                             <a className='link__social ds' href=''><span className='fa-brands fa-discord' /></a>

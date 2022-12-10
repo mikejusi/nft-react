@@ -866,7 +866,7 @@ footer{
 	opacity: .7;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 870px) {
     .content__footer{
         display: grid;
         justify-content: center;
@@ -1011,7 +1011,7 @@ footer{
 }
 
 @media screen and (max-width: 670px) {
-    .qa__item{
+    .qa__item, .qa__item__v2, .qa__item__v3{
         text-align: -webkit-center;
     }
 }
@@ -1679,4 +1679,28 @@ footer{
 
 .link__cab:hover{
     color: #4e4e4e;
+}
+
+/* 404 */
+
+.bg__404{
+    background: url(https://www.bybit.com/nft/static/img/bg.ff48407c.png) no-repeat;
+    background-size: cover;
+}
+
+.wrap__404{
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.title__404{
+    font-weight: bold;
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.desc__404{
+    font-weight: bold;
+    font-size: 26px;
 }

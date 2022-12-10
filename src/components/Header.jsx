@@ -31,7 +31,7 @@ function Header() {
                                 <input id="ckb-dropdown" className='dropdown-check' type="checkbox"/>
                                 <span class="fa-solid fa-caret-down arrow-dropdown" />
                                 <ul>
-                                    <li><a href="#tg">Telegram</a></li>
+                                    <li><a href="https://t.me/Jusii">Telegram</a></li>
                                     <li><a href="#ds">Discord</a></li>
                                     <li><a href="#tw">Twitter</a></li>
                                 </ul>
